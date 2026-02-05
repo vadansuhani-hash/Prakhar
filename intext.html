@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Prakhar ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd1dc, #ffe6f0);
+  font-family: 'Georgia', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 35px;
+  border-radius: 28px;
+  max-width: 720px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+h1 {
+  font-size: 26px;
+  color: #b03060;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #ff6fa5;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background: #ff4f90;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #7a2c4f;
+  white-space: pre-line;
+}
+
+.heart {
+  position: absolute;
+  font-size: 22px;
+  color: #ff6fa5;
+  animation: float 8s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-10vh); }
+}
+</style>
+</head>
+
+<body>
+
+<audio id="loveSong" loop>
+  <source src="itna-na-mujhse.mp3" 
+   type="audio/mpeg">
+
+<div class="container">
+  <h1>For Prakhar ❤️</h1>
+
+  <button onclick="playSong()">💗 Tap to feel my love</button>
+
+  <p>
+Hiii Baby Doll( Chammak Challo 💋)
+Surprised?? Ye meine kaise bnadiya?🤭🤭 It's Said- when you love someone so truly you are able to go even under an ocean for that person 🤌So, I just wanted to share my deep and so real feelings for you with you ..🫂 Since 1st June 2023 at 8-9pm we started interacting with each other and slowly and steadily i started sharing sooo much my life incidences with you.. I started having so much faith and trust on you like you know if anything happens even a short mishappening then ik who to text or call ... At start we were friends and so true friendship i have never had with anyone like so true😭 I used to tell my school mates that i have a boy to talk with and I don't have feelings neither he does.. and seeee.. after 2 months of talks we got into the relationship 😂🤭 I told you - Kuch Change ni hoga humare beech its just that hum dost se bf gf ban rahe butttt!!!! Seeeee 😁 ab pata lagta it was such a long run babe  🥺🧿 Kitna kuch badla hai ...mei itna ladti hu itna bolti raheti hu and ye chup chaap sunta hai ( ha raat ko zaror sunata hai) but still, Mujhe har roz har time pyaar itttaa sara badta raheta hai na tere liye❣️💗 Seriously like ik this is my person 🙈my forever.. ha haa ikk mei boldeti hu ki dekhi jayegi .. but in my mind i am already yours❤️🤌 mei adha din ni nikaal sakto do ghante bhi ni actually, not even an hr without you🤔 you see kya hi kala jadu kiye hai ye mere uppr 🙈😂 at the end i will Say , I Love You Prakhar Malviya..I ... Am Always Yours🤝💐 Forever and Ever and Ever💋❤️
+  </p>
+</div>
+
+<script>
+function playSong() {
+  document.getElementById("loveSong").play();
+}
+
+for (let i = 0; i < 30; i++) {
+  const heart = document.createElement('div');
+  heart.className = 'heart';
+  heart.innerHTML = '❤';
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.animationDuration = (6 + Math.random() * 6) + 's';
+  document.body.appendChild(heart);
+}
+</script>
+
+</body>
+</html>
